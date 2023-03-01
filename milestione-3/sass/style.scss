@@ -1,0 +1,31 @@
+@use 'variables';
+
+$primary-color: lightblue;
+
+h1{
+    color: $primary-color;
+}
+p{
+    background-color: $primary-color;
+    color: aliceblue;
+    font-size: variables.$base-font;
+}
+nav{
+    ul{
+        background-color: $primary-color;
+        li{
+            color: purple;
+
+            a{
+                text-decoration: line-through;
+            }
+        }
+    }
+}
+button{
+    background-color: red;
+    &:hover{
+background-color: darkgreen;
+    }
+}
+
